@@ -1,14 +1,14 @@
 class Page {
   pageName;
   link;
-  js;
+  script;
   htmlTemplate;
 
   constructor(src) {
     this.pageName = src.pageName;
     this.link = src.link;
-    this.js = src.js;
-    this.htmlTemplate = src.html;
+    this.script = src.script;
+    this.htmlTemplate = src.htmlTemplate;
   }
 }
 

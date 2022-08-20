@@ -17,7 +17,7 @@ const controlRoute = () => {
   const route = Router.find((route) => {
     return route.url === url;
   });
-
+  console.log(route);
   if (route) {
     initPage(route);
   } else {
