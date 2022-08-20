@@ -1,38 +1,35 @@
-import { getElementById } from "../lib/document.js";
-import { controlRouter } from "./Routers.js";
-
+import { getElementById } from "./lib/document.js";
+import Router from "./app/Router/Routers.js";
+import initPage from "./core/initPage.js";
 const root = getElementById("root");
 const srcLink = getElementById("links");
 const scripts = getElementById("scripts");
 
-const home = `
-<p>Hello</p>
-`;
-
-const getContent = (content) => {
-  if (content == "home") {
-    dynamicContent.innerHTML = home;
-    let script = document.createElement("script");
-    script.type = "module";
-    script.src = "./static/home.js";
-    scripts.append(script);
-  }
-};
-
 const setRoute = (event) => {
   const url = event.target.attributes["url-data"].value;
   history.pushState({}, "", url);
-  getContent(url);
+  controlRoute();
 };
 
 const controlRoute = () => {
-  if (true) {
-    root.innerHTML = "hello World";
+  const url = location.pathname;
+  const route = Router.find((route) => {
+    return route.url === url;
+  });
+
+  if (route) {
+    initPage(route);
+  } else {
+    root.innerHTML = "404Page";
   }
+  eventListener();
 };
 
-Array.from(document.getElementsByClassName(["link"])).forEach((link) =>
-  link.addEventListener("click", setRoute)
-);
+const eventListener = () => {
+  Array.from(document.getElementsByClassName(["link"])).forEach((link) =>
+    link.addEventListener("click", setRoute)
+  );
+};
+eventListener();
 
 document.addEventListener("DOMContentLoaded", controlRoute);
