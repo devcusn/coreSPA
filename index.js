@@ -1,6 +1,7 @@
 import { getElementById } from "./lib/document.js";
 import Router from "./app/Router/Routers.js";
 import initPage from "./core/initPage.js";
+
 const root = getElementById("root");
 const srcLink = getElementById("links");
 const scripts = getElementById("scripts");
