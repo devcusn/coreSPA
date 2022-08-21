@@ -1,6 +1,6 @@
-import Page from "../../core/class/Page.js";
+import HTML from "../../core/class/coreHTML.js";
 
-const htmlTemplate = /*html*/ `
+const template = new HTML(/*html*/ `
 <div class="container-fluid flex-center" >
   <div class='modal'>
     <div class='modal_title'>coreSPA</div>
@@ -14,13 +14,5 @@ const htmlTemplate = /*html*/ `
     </div>
   </div>
 </div>
-`;
-
-const HomePage = new Page({
-  pageName: "Home",
-  link: "home.page.css",
-  script: "home.page.js",
-  htmlTemplate: htmlTemplate,
-});
-
-export default HomePage;
+`);
+export default template.build();

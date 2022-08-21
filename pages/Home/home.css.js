@@ -1,4 +1,6 @@
-.modal {
+import CSS from "../../core/class/coreCSS.js";
+
+const style = new CSS(/*css*/ `.modal {
   display: flex;
   flex-direction: column;
   padding: 40px 30px;
@@ -44,3 +46,6 @@
   background-color: rgb(66, 66, 248);
   color: #fafafa;
 }
+`);
+
+export default style.build();

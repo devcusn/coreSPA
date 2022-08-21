@@ -1,10 +1,8 @@
 import { getElementById } from "./lib/document.js";
-import Router from "./app/Router/Routers.js";
+import Router from "./Router/Routers.js";
 import initPage from "./core/initPage.js";
 
 const root = getElementById("root");
-const srcLink = getElementById("links");
-const scripts = getElementById("scripts");
 
 const setRoute = (event) => {
   const url = event.target.attributes["url-data"].value;
@@ -17,7 +15,6 @@ const controlRoute = () => {
   const route = Router.find((route) => {
     return route.url === url;
   });
-  console.log(route);
   if (route) {
     initPage(route);
   } else {
