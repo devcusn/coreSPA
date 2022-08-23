@@ -1,3 +1,5 @@
+import cssStore from "../store/cssStore";
+
 class Component {
   componentSelector;
   template;
@@ -10,7 +12,7 @@ class Component {
   build() {
     const styleSheet = new CSSStyleSheet();
     styleSheet.replaceSync(this.style);
-    document.adoptedStyleSheets = [styleSheet];
+    document.adoptedStyleSheets = [...cssStore, styleSheet];
     return this;
   }
 }

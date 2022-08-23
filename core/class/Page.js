@@ -26,9 +26,8 @@ class Page {
   }
   componentBuild() {
     let selector = this.components[0].componentSelector;
-    console.log(selector);
     const tag = document.getElementsByTagName(selector);
-    tag.innerHTML = this.components[0].template;
+    tag[0].innerHTML = this.components[0].template;
   }
   build() {
     this.cssBuild();

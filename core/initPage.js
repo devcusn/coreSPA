@@ -1,16 +1,5 @@
-import { getElementById } from "../lib/document.js";
-
-const scripts = getElementById("scripts");
-
-const createScript = (pageComponent) => {
-  const scriptElement = document.createElement("script");
-  scriptElement.type = "module";
-  scriptElement.src = `./pages/${pageComponent}`;
-  return scriptElement;
-};
-
+import cssStore from "./store/cssStore";
 const initPage = (route) => {
-  scripts.appendChild(createScript(route.pageComponent));
+  route.pageComponent.build();
 };
-
 export default initPage;

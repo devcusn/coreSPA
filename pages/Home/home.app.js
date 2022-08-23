@@ -12,4 +12,4 @@ const HomePage = new Page({
   components: [Modal],
 });
 
-HomePage.build();
+export default HomePage;

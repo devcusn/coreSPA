@@ -1,9 +1,7 @@
 import HTML from "../../core/class/coreHTML.js";
 
 const template = new HTML(/*html*/ `
-<modal>
-Merhaba
-</modal>
+<modal></modal>
 <div class="container-fluid flex-center" >
   <div class='modal'>
     <div class='modal_title'>coreSPA</div>

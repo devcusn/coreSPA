@@ -28,6 +28,7 @@ const eventListener = () => {
     link.addEventListener("click", setRoute)
   );
 };
+
 eventListener();
 
 document.addEventListener("DOMContentLoaded", controlRoute);
