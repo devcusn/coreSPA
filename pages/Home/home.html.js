@@ -1,6 +1,9 @@
 import HTML from "../../core/class/coreHTML.js";
 
 const template = new HTML(/*html*/ `
+<modal>
+Merhaba
+</modal>
 <div class="container-fluid flex-center" >
   <div class='modal'>
     <div class='modal_title'>coreSPA</div>
@@ -15,4 +18,5 @@ const template = new HTML(/*html*/ `
   </div>
 </div>
 `);
+
 export default template.build();
