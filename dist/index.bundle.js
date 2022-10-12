@@ -96,7 +96,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _store_cssStore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store/cssStore */ \"./core/store/cssStore.js\");\n\nconst initPage = (route) => {\n  _store_cssStore__WEBPACK_IMPORTED_MODULE_0__[\"default\"].length = 0;\n  route.pageComponent.build();\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initPage);\n\n\n//# sourceURL=webpack:///./core/initPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _store_cssStore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store/cssStore */ \"./core/store/cssStore.js\");\n\nconst initPage = (route) => {\n  route.pageComponent.build();\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initPage);\n\n\n//# sourceURL=webpack:///./core/initPage.js?");
 
 /***/ }),
 
