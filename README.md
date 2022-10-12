@@ -2,7 +2,11 @@
 
 coreSPA is a pure Single Page Aplication JavaScript library
 
-## Router
+## Documentation
+
+This is the only document you need to know when using this library
+
+### Router
 
 ###### Path
 
@@ -12,7 +16,7 @@ coreSPA is a pure Single Page Aplication JavaScript library
 
 you can set the URL of the pages here
 
-## Global CSS
+### Global CSS
 
 ###### Path
 
