@@ -2,7 +2,7 @@
 
 coreSPA is a pure Single Page Aplication JavaScript library
 
-## Documentation
+## Docs
 
 This is the only document you need to know when using this library
 
